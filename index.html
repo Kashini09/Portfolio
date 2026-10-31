@@ -1,5 +1,3 @@
-<link rel="stylesheet" href="style.css">
-<script src="script.js" defer></script>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -77,36 +75,73 @@
     <section class="section container" id="projects">
       <p class="eyebrow">LEARNING BY BUILDING</p>
       <h2 class="section-title">My Projects</h2>
-      <p class="section-intro">Here are examples of student and practice projects. Update these descriptions to match your completed work and add live links when you have them.</p>
+      <p class="section-intro">Explore my programming projects and their source code on GitHub.</p>
+
       <div class="filter-bar" role="group" aria-label="Filter projects">
         <button class="filter-button active" type="button" data-filter="all">All Projects</button>
         <button class="filter-button" type="button" data-filter="web">Web Development</button>
         <button class="filter-button" type="button" data-filter="programming">Programming</button>
       </div>
+
       <div class="projects-grid" id="projectsGrid">
-        <article class="project-card" data-category="web">
-          <div class="project-visual visual-one"><span>PROJECT 01 · WEB</span><strong>Personal Portfolio</strong></div>
-          <div class="project-body"><h3>Student Portfolio Website</h3><p>A personal website that introduces me, highlights my skills, and presents examples of my work.</p><p class="tech">HTML · CSS · JavaScript</p><button class="details-button" type="button" aria-expanded="false">What I learned <span>＋</span></button><p class="project-details" hidden>I practised responsive layouts, navigation, theme switching, project filtering, and form validation.</p></div>
-        </article>
+        <!-- Project 1 has been removed as requested. -->
+
         <article class="project-card" data-category="programming">
-          <div class="project-visual visual-two"><span>PROJECT 02 · C</span><strong>Contact Book</strong></div>
-          <div class="project-body"><h3>Contact Book</h3><p>A programming practice project for organising contact details and learning how records can be managed.</p><p class="tech">C · Functions · File Handling</p><button class="details-button" type="button" aria-expanded="false">What I learned <span>＋</span></button><p class="project-details" hidden>This project can help practise structured programming, user input, functions, and basic file operations.</p></div>
+          <div class="project-visual visual-two">
+            <span>PROJECT 02 · C</span>
+            <strong>C Programming</strong>
+          </div>
+          <div class="project-body">
+            <h3>C Programming</h3>
+            <p>A collection of C programming exercises and projects for practising programming fundamentals and problem-solving.</p>
+            <p class="tech">C · Programming Fundamentals</p>
+            <a class="button primary project-link"
+               href="https://github.com/Kashini09/C-pro"
+               target="_blank"
+               rel="noopener noreferrer"
+               aria-label="View C Programming project on GitHub">View on GitHub ↗</a>
+            <button class="details-button" type="button" aria-expanded="false">What I learned <span>＋</span></button>
+            <p class="project-details" hidden>This repository can be used to explore C programming practice, including logic building, syntax, functions, and problem-solving. Open the repository to see its actual source files.</p>
+          </div>
         </article>
+
         <article class="project-card" data-category="programming">
-          <div class="project-visual visual-three"><span>PROJECT 03 · JAVA</span><strong>Billing System</strong></div>
-          <div class="project-body"><h3>Hotel &amp; Restaurant Billing System</h3><p>A Java application concept for selecting menu items, entering quantities, and calculating a bill total.</p><p class="tech">Java · Classes · Methods</p><button class="details-button" type="button" aria-expanded="false">What I learned <span>＋</span></button><p class="project-details" hidden>This project provides practice with classes, methods, conditions, loops, calculations, and handling invalid input.</p></div>
+          <div class="project-visual visual-three">
+            <span>PROJECT 03 · JAVA</span>
+            <strong>Java Programming</strong>
+          </div>
+          <div class="project-body">
+            <h3>Java Programming</h3>
+            <p>A collection of Java programming work for practising object-oriented concepts, coding fundamentals, and application logic.</p>
+            <p class="tech">Java · Object-Oriented Programming</p>
+            <a class="button primary project-link"
+               href="https://github.com/Kashini09/Java-Programming"
+               target="_blank"
+               rel="noopener noreferrer"
+               aria-label="View Java Programming project on GitHub">View on GitHub ↗</a>
+            <button class="details-button" type="button" aria-expanded="false">What I learned <span>＋</span></button>
+            <p class="project-details" hidden>This repository can be used to explore Java practice and concepts such as classes, objects, methods, conditions, loops, and problem-solving. Open the repository to see its actual source files.</p>
+          </div>
         </article>
       </div>
-      <p class="small-note">Note: These are sample descriptions based on common student project examples. Keep only projects you have actually worked on and adjust the details honestly.</p>
+      <p class="small-note">Project descriptions are brief summaries. Update them to reflect the exact work and features included in each repository.</p>
     </section>
 
     <section class="section contact-section" id="contact">
       <div class="container contact-layout">
-        <div><p class="eyebrow">LET'S CONNECT</p><h2 class="section-title">Contact Me</h2><p>Thank you for visiting my portfolio. If you would like to discuss a project or share learning opportunities, you can prepare a message using the form.</p><p class="small-note">This is a front-end demo. The form checks the fields but does not send or store messages.</p></div>
+        <div>
+          <p class="eyebrow">LET'S CONNECT</p>
+          <h2 class="section-title">Contact Me</h2>
+          <p>Thank you for visiting my portfolio. If you would like to discuss a project or share learning opportunities, you can prepare a message using the form.</p>
+          <p class="small-note">This is a front-end demo. The form checks the fields but does not send or store messages.</p>
+        </div>
         <form id="contactForm" class="contact-form">
-          <label for="visitorName">Your name</label><input id="visitorName" name="visitorName" type="text" required minlength="2" placeholder="Enter your name">
-          <label for="visitorEmail">Email address</label><input id="visitorEmail" name="visitorEmail" type="email" required placeholder="you@example.com">
-          <label for="visitorMessage">Message</label><textarea id="visitorMessage" name="visitorMessage" required minlength="10" rows="4" placeholder="Write your message..."></textarea>
+          <label for="visitorName">Your name</label>
+          <input id="visitorName" name="visitorName" type="text" required minlength="2" placeholder="Enter your name">
+          <label for="visitorEmail">Email address</label>
+          <input id="visitorEmail" name="visitorEmail" type="email" required placeholder="you@example.com">
+          <label for="visitorMessage">Message</label>
+          <textarea id="visitorMessage" name="visitorMessage" required minlength="10" rows="4" placeholder="Write your message..."></textarea>
           <button class="button primary" type="submit">Validate Message</button>
           <p id="formFeedback" class="form-feedback" role="status" aria-live="polite"></p>
         </form>
@@ -114,7 +149,12 @@
     </section>
   </main>
 
-  <footer class="footer"><div class="container footer-inner"><p>© <span id="year"></span> Kashini K. Built with HTML, CSS &amp; JavaScript.</p><a href="#home">Back to top ↑</a></div></footer>
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Kashini K. Built with HTML, CSS &amp; JavaScript.</p>
+      <a href="#home">Back to top ↑</a>
+    </div>
+  </footer>
   <button id="backToTop" class="back-to-top" type="button" aria-label="Back to top">↑</button>
 </body>
 </html>
